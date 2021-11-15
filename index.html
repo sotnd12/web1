@@ -9,11 +9,21 @@
 
   gtag('config', 'G-PN2WM3VRF7');
 </script>
-<title>html연습용</title>
+<title>연습용</title>
 <meta charset="utf-8">
 </head>
 <body>
-  <h1><a href="index.html">html 연습용 웹</a></h1>
+  <h1><a href="index.html">연습용 웹</a></h1>
+  <input id="모드전환" type="button" value="다크모드" onclick="
+  if(document.querySelector('#모드전환').value === '다크모드'){
+  document.querySelector('body').style.backgroundColor = 'black';
+  document.querySelector('body').style.color = 'white';
+  document.querySelector('#모드전환').value = '일반모드';
+} else {
+  document.querySelector('body').style.backgroundColor = 'white';
+  document.querySelector('body').style.color = 'black';
+  document.querySelector('#모드전환').value = '다크모드';}
+  ">
   <ol>
     <li><a href="1.html">APEX LEGENDS</a></li>
     <li><a href="2.html">DJMAX RESPECT</a></li>
